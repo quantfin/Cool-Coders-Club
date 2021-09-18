@@ -1,0 +1,8 @@
+int solve(vector<vector<int>>& intervals, int point) {
+    int res = 0;
+    for(vector<int>& p : intervals){
+        if(p[0]<= point && p[1] >= point) res++;
+    }
+    return res;
+
+}
