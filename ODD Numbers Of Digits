@@ -1,0 +1,11 @@
+int solve(vector<int>& nums) {
+    int count=0;
+    for(auto x:nums){
+        if(to_string(x).size()%2!=0) // check size of individual strings odd or not
+        {
+            count++;
+        }
+    }
+    return count;
+}
+    
